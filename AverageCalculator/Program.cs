@@ -22,7 +22,8 @@ namespace AverageCalculator
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter Subject's 'Name' 'Score' and 'Mul' Respectively One Space Apart\nType 'Exit' When You're Done\n");
+            //Console.WriteLine("Enter Subject's 'Name' 'Score' and 'Mul' Respectively One Space Apart\nType 'Exit' When You're Done\n");
+            Console.WriteLine("Enter 'Name' 'Score' and 'Mul' and Type 'Exit' When You're Done\n");
 
             string input;
             string[] temp;

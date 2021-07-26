@@ -22,8 +22,7 @@ namespace AverageCalculator
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Enter Subject's 'Name' 'Score' and 'Mul' Respectively One Space Apart\nType 'Exit' When You're Done\n");
-            Console.WriteLine("Enter 'Name' 'Score' and 'Mul' and Type 'Exit' When You're Done\n");
+            Console.WriteLine("Enter Subject's 'Name' 'Score' and 'Mul' Respectively One Space Apart in each line\nType 'Exit' When You're Done\n");
 
             string input;
             string[] temp;
@@ -61,6 +60,7 @@ namespace AverageCalculator
             Console.WriteLine($"\tLowest Score:\t\t{minScore.ToString("0.00")} \t ({subjects.FirstOrDefault(x => x.Mark == minScore).Name})");
 
             Console.WriteLine($"\n\tNum of Subjects:\t{subjects.Count}");
+            Console.WriteLine($"\tTotal Mul:\t\t{subjects.Sum(x=>x.Mul)}");
             Console.WriteLine($"\tPerfect Scores (20/20):\t{subjects.Count(x => x.Mark == 20)}");
             Console.WriteLine($"\tScores Higher Than 17:\t{subjects.Count(x => x.Mark > 17)}");
             Console.WriteLine($"\tFailed Subject(s):\t{subjects.Count(x => x.Mark < 10)}");

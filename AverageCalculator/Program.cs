@@ -33,7 +33,7 @@ namespace AverageCalculator
 
             List<Subject> subjects = new List<Subject>();
 
-            while ((input = Console.ReadLine().ToLower()) != "exit")
+            while ((input = Console.ReadLine()) != "Exit")
             {
                 temp = input.Split(' ');
                 name = temp[0];
